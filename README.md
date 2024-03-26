@@ -1,8 +1,11 @@
-
-
 # Performance Goals - Farmácia
 
 Criação e execução de um sistema de farmácia personalizado, projetado para atender às necessidades específicas da proposta de setor farmacêutico, oferecendo uma solução integrada e eficiente para gerenciamento de medicamentos, estoque, vendas, atendimento ao cliente e conformidade regulatória.
+
+## Acesso a proposta
+```
+https://docs.google.com/document/d/1BtD4AZ-J0n6kdJqzm4NRqkuf-ydO5tCI/edit
+```
 
 ## Atributos do Sistema
 
