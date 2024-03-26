@@ -1,0 +1,32 @@
+package com.generation.farmacia.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
+@Entity
+@Table(name = "tb_produtos")
+public class Produto {
+
+	//ID 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	//Nome da categoria
+	@NotNull(message = "O atributo nomeProduto é obrigatório!") //Não pode estar vazio
+	@Size(min = 5, max = 50, message = "O atributo nomeProduto deve conter de 05 à 50 caracteres")
+	private String nomeProduto;
+
+	//Descrição da categoria
+	@NotNull(message = "O atributo descricaoProduto é obrigatório!") //Não pode estar vazio
+	@Size(min = 5, max = 100, message = "O atributo descricaoProduto deve conter de 05 à 100 caracteres")
+	private String descricaoProduto;
+	
+	
+
+}
