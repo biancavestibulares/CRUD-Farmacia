@@ -49,7 +49,7 @@ public class CategoriaController {
 	}
 	
 	//Rastreando os valores pela descrição
-	@GetMapping("/buscarPorDescricao/{descricaoCategoria}") //Endpoint http://localhost:8080/categorias//buscarPorDescricao/{descricaoCategoria}
+	@GetMapping("/buscarPorDescricao/{descricaoCategoria}") //Endpoint http://localhost:8080/categorias/buscarPorDescricao/{descricaoCategoria}
 	public ResponseEntity<List<Categoria>> getByTitle(@PathVariable String descricaoCategoria){
 		
 		return ResponseEntity.ok(categoriaRepository.findAllByDescricaoCategoriaContainingIgnoreCase(descricaoCategoria));
